@@ -67,6 +67,10 @@ $yellow: #FFBB0C;
 
 .img {
   width: 100%;
+
+  &_rounded {
+    border-radius: 8px;
+  }
 }
 
 

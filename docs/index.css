@@ -46,6 +46,8 @@
 
 .img {
   width: 100%; }
+  .img_rounded {
+    border-radius: 8px; }
 
 .about {
   display: flex;
@@ -62,6 +64,36 @@
     margin: 20px 0px; }
   .about__button {
     padding: 20px 0px 0px 0px; }
+
+.destin__header {
+  display: flex;
+  justify-content: space-between; }
+
+.destin__body {
+  display: flex;
+  justify-content: space-between;
+  margin: 56px 0px; }
+
+.item {
+  padding: 0px 12px;
+  position: relative; }
+  .item__text {
+    z-index: 1;
+    background-color: #FFFFFF;
+    border-radius: 0px 6px 0px 0px;
+    position: absolute;
+    bottom: 0px;
+    line-height: 25px;
+    padding: 11px 0px 5px 0px;
+    width: 120px; }
+  .item__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #042521; }
+  .item__subtitle {
+    font-size: 17px;
+    font-weight: 500;
+    color: #80908E; }
 
 .explore {
   display: flex;
