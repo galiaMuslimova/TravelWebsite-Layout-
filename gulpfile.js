@@ -8,7 +8,7 @@ function html() {
   .pipe(include({
     prefix: '@@'
   }))
-  .pipe(dest('root'))
+  .pipe(dest('docs'))
 }
 
 function scss() {
@@ -16,7 +16,7 @@ function scss() {
   .pipe(concat('main.scss'))
   .pipe(sass())
   .pipe(concat('index.css'))
-  .pipe(dest('root'))
+  .pipe(dest('docs'))
 }
 
 exports.build = series(html, scss)
