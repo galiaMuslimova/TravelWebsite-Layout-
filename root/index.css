@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Mulish:300,regular,700);
+.page {
+  max-width: 1415px;
+  margin: 0px auto;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000; }
+
+.container {
+  width: 95%;
+  margin: 0px auto; }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 85%; } }
+
+.title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+  line-height: 50px; }
+
+.text {
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 17px;
+  color: #7D7987;
+  line-height: 30px; }
+
+.btn {
+  height: 48px;
+  width: 164px;
+  background-color: #FB8F1D;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  transition: color, border, background-color 0.3s; }
+  .btn:hover {
+    background-color: white;
+    color: #FB8F1D;
+    border: 1px solid #FB8F1D; }
+
+.img {
+  width: 100%; }
+
+.explore {
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  .explore__content {
+    width: 500px;
+    color: #202336; }
+  .explore__title {
+    width: 356px;
+    font-size: 48px;
+    line-height: 60px;
+    margin: 0px 0px 30px 0px; }
+  .explore__subtitle {
+    font-weight: 600px;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 20px 0px 0px 0px; }
+  .explore__sliders {
+    display: flex;
+    flex-wrap: wrap; }
+  .explore__btn {
+    height: 48px;
+    width: 160px;
+    margin: 35px 0px 0px 0px; }
+  .explore__img {
+    display: block;
+    width: 45%; }
+  @media (max-width: 768px) {
+    .explore__content {
+      margin: 0px auto; }
+    .explore__title {
+      width: 500px;
+      font-size: 42px; }
+    .explore__img {
+      display: none; } }
+  @media (min-width: 1200px) {
+    .explore__title {
+      font-size: 64px;
+      line-height: 80px;
+      margin: 0px 0px 40px 0px; }
+    .explore__subtitle {
+      font-size: 22px;
+      line-height: 27px;
+      margin: 35px 0px; }
+    .explore__btn {
+      height: 52px;
+      width: 180px;
+      margin: 51px 0px 0px 0px; }
+    .explore__img {
+      display: block;
+      width: 50%;
+      position: absolute;
+      right: -7%; } }
+
+.sliders__item {
+  border-radius: 6px;
+  padding: 25px 25px 0px 0px; }
+
+.sliders__btn {
+  height: 50px;
+  width: 190px;
+  background-color: white;
+  color: #4A4C53;
+  border: 0.8px solid #AFB0B9; }
+  .sliders__btn option {
+    padding: 20px 21px 20px 0px; }
+
+@media (min-width: 1200px) {
+  .sliders__item {
+    border-radius: 6px;
+    padding: 35px 30px 0px 0px; }
+  .sliders__btn {
+    height: 52px;
+    width: 220px; }
+    .sliders__btn option {
+      padding: 21px 31px 21px 0px; } }
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .menu__logo {
+    width: 41px;
+    height: 41px; }
+  .menu__icon {
+    display: none; }
+  .menu__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    margin: 35px 0px; }
+  .menu__link {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 0px 34px 0px 0px;
+    color: #B8BECD;
+    transition: color 0.3s; }
+    .menu__link_active, .menu__link:hover {
+      color: #202336;
+      font-weight: 500; }
+  .menu__reg {
+    list-style-type: none; }
+    .menu__reg_login {
+      padding: 0px 18px 0px 0px; }
+  @media (max-width: 768px) {
+    .menu .menu__body {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .menu__link {
+      padding: 0px 28px 0px 0px; } }
+
+.btn-reg {
+  height: 44px;
+  width: 132px;
+  font-weight: 500; }
+  .btn-reg_login {
+    background-color: white;
+    color: #FB8F1D;
+    border: 1px solid #FB8F1D; }
+    .btn-reg_login:hover {
+      background-color: #FB8F1D;
+      color: white;
+      border: none; }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .btn-reg {
+      width: 120px; } }

@@ -1,0 +1,79 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 41px;
+    height: 41px;
+  }
+
+  &__icon {
+    display: none;
+  }
+
+	&__list {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 60px;
+      margin: 35px 0px;
+		}
+
+	&__link {
+      list-style-type: none;
+      cursor: pointer;
+      padding: 0px 34px 0px 0px;
+      color: #B8BECD;
+      transition: color 0.3s ;
+
+      &_active, &:hover {
+        color: #202336;
+        font-weight: 500;
+      }
+		}
+
+    &__reg {
+      list-style-type: none;
+
+      &_login {
+        padding: 0px 18px 0px 0px;
+      }
+    }
+
+    @media (max-width: $md) {
+      .menu {
+        &__body {
+          display: none;
+        }
+      }
+    }
+
+     @media (min-width:$md) and (max-width:$lg) {
+       &__link {
+          padding: 0px 28px 0px 0px;
+       }
+    }
+}
+
+.btn-reg {
+  height: 44px;
+  width: 132px;
+  font-weight: 500;
+
+  &_login {
+    background-color: white;
+    color: $orange;
+    border: 1px solid $orange;
+
+    &:hover {
+      background-color: $orange;
+      color: white;
+      border: none;
+      }
+    }
+
+    @media (min-width:$md) and (max-width:$lg) {
+       width: 120px;
+    }
+}

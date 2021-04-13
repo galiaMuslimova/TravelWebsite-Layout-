@@ -13,6 +13,7 @@ function html() {
 
 function scss() {
   return src('src/scss/**/*.scss')
+  .pipe(concat('main.scss'))
   .pipe(sass())
   .pipe(concat('index.css'))
   .pipe(dest('root'))

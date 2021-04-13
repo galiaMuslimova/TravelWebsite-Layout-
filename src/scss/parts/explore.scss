@@ -1,0 +1,117 @@
+.explore {
+   display: flex;
+   justify-content: space-between;     
+   position: relative;
+
+		&__content {
+         width: 500px;
+         color: #202336;
+		}
+
+		&__title {
+         width: 356px;
+         font-size: 48px;
+         line-height: 60px;
+         margin: 0px 0px 30px 0px;
+		}
+
+		&__subtitle {
+         font-weight: 600px;
+         font-size: 18px;
+         line-height: 24px;
+         margin: 20px 0px 0px 0px;
+		}
+
+		&__sliders {
+      display: flex;
+      flex-wrap: wrap;
+		}
+
+		&__btn {
+      height: 48px;
+      width: 160px;
+      margin: 35px 0px 0px 0px;
+		}
+
+      &__img {
+         display: block;
+         width: 45%;
+		}
+
+      @media (max-width:$md) {
+         &__content {
+            margin: 0px auto;
+         }
+
+         &__title {
+            width: 500px;
+            font-size: 42px;
+         }
+
+         &__img {
+            display: none;
+         }
+      }
+
+      @media (min-width: $xl) {
+         &__title {
+         font-size: 64px;
+         line-height: 80px;
+         margin: 0px 0px 40px 0px;
+         }
+
+         &__subtitle {
+         font-size: 22px;
+         line-height: 27px;
+         margin: 35px 0px;
+         }
+
+         &__btn {
+         height: 52px;
+         width: 180px;
+         margin: 51px 0px 0px 0px;
+         }
+
+         &__img {
+            display: block;
+            width: 50%;
+            position: absolute;
+            right: -7%;
+		   }
+      }
+}
+
+.sliders {
+		&__item {      
+         border-radius: 6px;      
+         padding: 25px 25px 0px 0px;
+		}
+
+      &__btn {
+         height: 50px;
+         width: 190px; 
+         background-color: white;
+         color: #4A4C53;
+         border: 0.8px solid #AFB0B9;
+
+         option {
+            padding: 20px 21px 20px 0px;
+         }
+      }
+
+      @media (min-width: $xl) {
+         &__item {      
+            border-radius: 6px;      
+            padding: 35px 30px 0px 0px;
+         }
+
+         &__btn {
+            height: 52px;
+            width: 220px; 
+
+            option {
+               padding: 21px 31px 21px 0px;
+            }
+         }
+      }
+}

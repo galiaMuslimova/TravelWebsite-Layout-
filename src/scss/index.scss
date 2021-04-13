@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Mulish:300,regular,700);
+
+//Переменные
+$minWidth: 320px;
+$maxWidth: 1415px;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+//Цвета
+$orange: #FB8F1D;
+$yellow: #FFBB0C;
+
+
+.page {
+  max-width: $maxWidth;
+  margin: 0px auto;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.container {
+  width: 95%;
+  margin: 0px auto;
+  @media (min-width: $xl){
+    max-width: 85%; 
+   }
+}
+
+.title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+  line-height: 50px;
+}
+
+.text {
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 17px;
+  color: #7D7987;
+  line-height: 30px;
+}
+
+.btn {
+  height: 48px;
+  width: 164px;
+  background-color: $orange;
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  transition: color, border, background-color 0.3s;
+
+  &:hover {
+    background-color: white;
+    color: $orange;
+    border: 1px solid $orange;
+  }
+}
+
+.img {
+  width: 100%;
+}
+
+
