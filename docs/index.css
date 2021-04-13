@@ -47,6 +47,22 @@
 .img {
   width: 100%; }
 
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 550px;
+  margin-top: 100px; }
+  .about__img {
+    width: 659px; }
+  .about__content {
+    width: 480px;
+    margin: 0 5% 0 8%; }
+  .about__text {
+    margin: 20px 0px; }
+  .about__button {
+    padding: 20px 0px 0px 0px; }
+
 .explore {
   display: flex;
   justify-content: space-between;
