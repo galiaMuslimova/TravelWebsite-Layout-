@@ -88,13 +88,5 @@ $yellow: #ffbb0c;
 }
 
 .img {
-  width: 100%;
-
-  &_rounded {
-    border-radius: 8px;
-
-    @media (max-width: $md) {
-      border-radius: 2px;
-    }
-  }
+  width: 100%;  
 }

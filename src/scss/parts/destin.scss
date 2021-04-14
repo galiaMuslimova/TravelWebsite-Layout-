@@ -60,6 +60,16 @@
       color: #80908e;
    }
 
+   &__image {
+      img {
+         border-radius: 8px;
+
+         @media (max-width: $md) {
+            border-radius: 2px;
+         }
+      }
+   }
+
    @media (max-width: $md) {
       padding: 10px;
       margin: 0px auto;
