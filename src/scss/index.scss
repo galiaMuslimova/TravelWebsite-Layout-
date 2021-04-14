@@ -11,9 +11,8 @@ $md: 768px;
 $sm: 576px;
 
 //Цвета
-$orange: #FB8F1D;
-$yellow: #FFBB0C;
-
+$orange: #fb8f1d;
+$yellow: #ffbb0c;
 
 .page {
   max-width: $maxWidth;
@@ -26,10 +25,28 @@ $yellow: #FFBB0C;
 
 .container {
   width: 95%;
-  margin: 0px auto;
-  @media (min-width: $xl){
-    max-width: 85%; 
-   }
+  margin: 0px auto 90px auto;
+
+  &__block {
+    position: relative;
+  }
+
+  @media (max-width: $sm) {
+    margin: 0px auto 40px auto;
+  }
+
+  @media (min-width: $md) and (max-width: $lg) {
+    margin: 0px auto 65px auto;
+  }
+
+  @media (min-width: $xl) {
+    max-width: 85%;
+    margin: 0px auto 150px auto;
+
+    &__block {
+      margin: 0px 50px;
+    }
+  }
 }
 
 .title {
@@ -38,13 +55,18 @@ $yellow: #FFBB0C;
   font-size: 36px;
   color: #000000;
   line-height: 50px;
+
+  @media (max-width: $md) {
+    font-size: 32px;
+    margin: 0px auto;
+  }
 }
 
 .text {
   font-family: "Mulish";
   font-weight: 300;
   font-size: 17px;
-  color: #7D7987;
+  color: #7d7987;
   line-height: 30px;
 }
 
@@ -52,7 +74,7 @@ $yellow: #FFBB0C;
   height: 48px;
   width: 164px;
   background-color: $orange;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 600;
   border-radius: 8px;
   border: none;
@@ -70,7 +92,9 @@ $yellow: #FFBB0C;
 
   &_rounded {
     border-radius: 8px;
+
+    @media (max-width: $md) {
+      border-radius: 2px;
+    }
   }
 }
-
-
