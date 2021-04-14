@@ -5,12 +5,13 @@
    max-height: 550px;
 
    &__img {
-      width: 659px;
+      flex: 1 2 610px;
+      margin: 0px 30px;
    }
 
    &__content {
-      width: 480px;
-      margin: 0 5% 0 8%;
+      flex: 1 1 450px;
+      margin: 0px 50px;
    }
 
    &__text {
@@ -19,6 +20,16 @@
 
    &__button {
       padding: 20px 0px 0px 0px;
+   }
+
+   @media (max-width: $lg) {
+      &__img {
+         margin: 0px 15px;
+      }
+
+      &__content {
+         margin: 0px 25px;
+      }
    }
 
    @media (max-width: $md) {

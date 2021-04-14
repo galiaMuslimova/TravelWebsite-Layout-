@@ -73,14 +73,20 @@
   justify-content: space-between;
   max-height: 550px; }
   .about__img {
-    width: 659px; }
+    flex: 1 2 610px;
+    margin: 0px 30px; }
   .about__content {
-    width: 480px;
-    margin: 0 5% 0 8%; }
+    flex: 1 1 450px;
+    margin: 0px 50px; }
   .about__text {
     margin: 20px 0px; }
   .about__button {
     padding: 20px 0px 0px 0px; }
+  @media (max-width: 992px) {
+    .about__img {
+      margin: 0px 15px; }
+    .about__content {
+      margin: 0px 25px; } }
   @media (max-width: 768px) {
     .about {
       text-align: center; }
