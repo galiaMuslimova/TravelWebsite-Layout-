@@ -52,11 +52,11 @@
 </div>
     <div class="destin container">
   <div class="container__block">
-  <div class="destin__header">
-    <div class="destin__title title">Featured destinations</div>
-    <div class="destin__btn"><span>View all ></span></div>        
+  <div class="destin__header head">
+    <div class="head__title title">Featured destinations</div>
+    <div class="head__view"><span>View all ></span></div>        
   </div>
-  <div class="destin__body">
+  <div class="destin__body items-box">
     <div class="destin__item item">
       <div class="item__image"><img class="img" src="img/Raja.png"/></div>
       <div class="item__text">
@@ -64,7 +64,7 @@
         <div class="item__subtitle">Indonesia</div>
       </div>
     </div>
-    <div class="destin__item item">
+    <div class="destin__item item item__hide">
       <div class="item__image"><img class="img" src="img/Fanjingshan.png" /></div>
       <div class="item__text">
         <div class="item__title">Fanjingshan</div>
@@ -78,7 +78,7 @@
         <div class="item__subtitle">Switzerland</div>
       </div>
     </div> 
-    <div class="destin__item item">
+    <div class="destin__item item item__hide">
       <div class="item__image"><img class="img" src="img/Skadar.png" /></div>
       <div class="item__text">
         <div class="item__title">Skadar</div>
@@ -99,33 +99,95 @@
   <div class="about__img"><img class="img" src="img/guides.png" /></div>
 </div>
     <div class="testim container">
-  <div class="testim__title title">Testimonials</div>
-  <div class="testim__body">    
-    <div class="testim__content">
-      <div class="testim__stars">
-        <div class="star"><img class="img" src="img/star.png"></div>
-        <div class="star"><img class="img" src="img/star.png"></div>
-        <div class="star"><img class="img" src="img/star.png"></div>
-        <div class="star"><img class="img" src="img/star.png"></div>
-        <div class="star"><img class="img" src="img/star.png"></div>
-      </div>
-      <div class="testim__text text">
-        “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”
+  <div class="container__block">
+    <div class="testim__header">
+      <div class="testim__title title">Testimonials</div>
     </div>
-      <div class="testim__name">Edward Newgate</div>
-      <div class="testim__info">Founder Circle</div>      
-    </div>
-    <div class="testim__photo">
-      <div class="testim__img">
-        <img class="img" src="img/testim.png">
+    
+    <div class="testim__body">
+      <div class="testim__content">
+        <div class="testim__stars">
+          <div class="star"><img class="img" src="img/star.png"></div>
+          <div class="star"><img class="img" src="img/star.png"></div>
+          <div class="star"><img class="img" src="img/star.png"></div>
+          <div class="star"><img class="img" src="img/star.png"></div>
+          <div class="star"><img class="img" src="img/star.png"></div>
+        </div>
+        <div class="testim__text text">
+          “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus.
+          Morbi blandit sit amet turpis nec”
+        </div>
+        <div class="testim__name">Edward Newgate</div>
+        <div class="testim__info">Founder Circle</div>
       </div>
-      <div class="testim__slider btns">
-        <button class="btns__left"></button>
-        <button class="btns__right"></button>
+      <div class="testim__photo">
+        <div class="testim__img">
+          <img class="img" src="img/testim.png">
+          <div class="testim__slider slider">
+            <div class="slider__btn btn__prev">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 25L18 20.5L22 16" stroke="black" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle cx="20" cy="20" r="19" transform="rotate(-180 20 20)" stroke="black" stroke-width="2" />
+              </svg>
+            </div>
+            <div class="slider__btn btn__next">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 15L22 19.5L18 24" stroke="black" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <circle cx="20" cy="20" r="19" stroke="black" stroke-width="2" />
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+    <div class="stories container">
+  <div class="container__block">
+    <div class="stories__header head">
+      <div class="head__title title">Trending stories</div>
+      <div class="head__view">View all ></div>
+    </div>
+    <div class="stories__body">
+      <div class="stories__body items-box">
+        <div class="stories__item item">
+          <div class="item__image"><img class="img" src="img/stories_1.png" /></div>
+          <div class="item__text">
+            <div class="item__title">The many benefits of taking a healing holiday</div>
+            <div class="item__subtitle">‘Helaing holidays’ are on the rise tohelp maximise your health and happines...</div>
+          </div>
+          <div class="item__more">Read more</div>
+        </div>
+        <div class="stories__item item">
+          <div class="item__image"><img class="img" src="img/stories_2.png" /></div>
+          <div class="item__text">
+            <div class="item__title">The many benefits of taking a healing holiday</div>
+            <div class="item__subtitle">‘Helaing holidays’ are on the rise tohelp maximise your health and happines...</div>
+          </div>
+          <div class="item__more">Read more</div>
+        </div>
+        <div class="stories__item item item__hide">
+          <div class="item__image"><img class="img" src="img/stories_3.png" /></div>
+          <div class="item__text">
+            <div class="item__title">The many benefits of taking a healing holiday</div>
+            <div class="item__subtitle">‘Helaing holidays’ are on the rise tohelp maximise your health and happines...</div>
+          </div>
+          <div class="item__more">Read more</div>
+        </div>
+        <div class="stories__item item item__hide">
+          <div class="item__image"><img class="img" src="img/stories_4.png" /></div>
+          <div class="item__text">
+            <div class="item__title">The many benefits of taking a healing holiday</div>
+            <div class="item__subtitle">‘Helaing holidays’ are on the rise tohelp maximise your health and happines...</div>
+          </div>
+          <div class="item__more">Read more</div>
+        </div>
+    </div>
+  </div>
+</div>
+    <div class="footer"></div>
   </main>
 </body>
 </html>

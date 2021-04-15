@@ -27,10 +27,6 @@ $yellow: #ffbb0c;
   width: 95%;
   margin: 0px auto 90px auto;
 
-  &__block {
-    position: relative;
-  }
-
   @media (max-width: $sm) {
     margin: 0px auto 40px auto;
   }
@@ -42,9 +38,15 @@ $yellow: #ffbb0c;
   @media (min-width: $xl) {
     max-width: 85%;
     margin: 0px auto 150px auto;
+  }
 
-    &__block {
+  &__block {
+    position: relative;
+    @media (min-width: $xl) {
       margin: 0px 50px;
+    }
+    @media (max-width: $md) {
+      padding: 0px 0px 20px 0px;
     }
   }
 }
@@ -88,5 +90,5 @@ $yellow: #ffbb0c;
 }
 
 .img {
-  width: 100%;  
+  width: 100%;
 }

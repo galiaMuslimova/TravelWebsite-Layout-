@@ -1,9 +1,14 @@
 .testim {
+  &__header {
+    margin: 0px auto;
+  }
   &__body {
     display: flex;
-  }
+    margin: 20px 0px 0px 0px;
 
-  &__title {
+    @media (max-width: $sm) {
+      flex-direction: column;
+    }
   }
 
   &__content {
@@ -11,12 +16,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: $sm) {
+      align-items: center;
+      margin: 10px 0px 0px 0px;
+      order: 2;
+    }
   }
 
   &__stars {
     display: flex;
     justify-content: space-between;
     max-width: 190px;
+    gap: 10px;
 
     .star {
       width: 25px;
@@ -41,25 +53,75 @@
 
   &__photo {
     flex: 1 1 50%;
+    padding: 0px 35px;
+    order: 1;
   }
 
   &__img {
+    position: relative;
     max-width: 384px;
     margin: 0px auto;
-    padding: 0px 35px;
 
     img {
       border-radius: 12px;
     }
   }
-
-  &__slider {
-  }
 }
-.btns {
-  &__left {
+.slider {
+  position: absolute;
+  z-index: 1;
+  bottom: 0px;
+  right: 0px;
+  height: 60px;
+  width: 130px;
+  background: #ffffff;
+  border-radius: 16px 0px 0px 0px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  &__btn {
+    padding: 20px 0px 0px 22px;
+
+    svg {
+      height: 40px;
+      width: 40px;
+      transform: scale(3);
+      opacity: 0.6;
+
+      &:hover {
+        circle {
+          stroke: #d7d7d7;
+        }
+        path {
+          stroke: #d7d7d7;
+        }
+      }
+
+      @media (max-width: $sm) {
+        &:hover {
+          path {
+            stroke: #80908e;
+          }
+        }
+        circle {
+          display: none;
+        }
+        path {
+          stroke: white;
+        }
+      }
+    }
   }
 
-  &__right {
+  @media (max-width: $sm) {
+    width: 100%;
+    bottom: 50%;
+    background: none;
+    justify-content: space-between;
+
+    &__btn {
+      padding: 0px;
+    }
   }
 }
