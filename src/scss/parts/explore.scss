@@ -1,76 +1,61 @@
 .explore {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   position: relative;
-
    &__content {
-      max-width: 430px;
+      flex: 0 0 410px;
       color: #202336;
    }
 
    &__title {
       max-width: 356px;
-      font-size: 48px;
-      line-height: 60px;
-      margin: 0px 0px 30px 0px;
+      font-size: 64px;
+      line-height: 60/48 * 100%;
    }
 
    &__subtitle {
       font-weight: 600px;
-      font-size: 18px;
-      line-height: 24px;
-      margin: 20px 0px 0px 0px;
-   }
-
-   &__sliders {
-      display: flex;
-      flex-wrap: wrap;
+      font-size: 22px;
+      line-height: 24/18 * 100%;
+      margin: 70px 0px;
    }
 
    &__btn {
-      height: 48px;
-      width: 160px;
-      margin: 35px 0px 0px 0px;
+      height: 52px;
+      width: 180px;
+      margin: 51px 0px 0px 0px;
    }
 
    &__img {
       display: block;
-      width: 45%;
+      flex: 0 1 687px;
+      max-width: 45%;
    }
-   
+
    @media (min-width: $xl) {
       &__content {
-         max-width: 500px;
+         flex: 0 0 470px;
       }
-
-      &__title {
-         font-size: 64px;
-         line-height: 80px;
-         margin: 0px 0px 40px 0px;
-      }
-
-      &__subtitle {
-         font-size: 22px;
-         line-height: 27px;
-         margin: 35px 0px;
-      }
-
-      &__btn {
-         height: 52px;
-         width: 180px;
-         margin: 51px 0px 0px 0px;
-      }
-
       &__img {
-         display: block;
-         width: 50%;
          position: absolute;
+         top: 0;
          right: -7%;
       }
    }
+
+   @media (max-width: $lg) {
+      &__content {
+         flex: 0 0 370px;
+      }
+      &__title {
+         font-size: 52px;
+      }
+      &__subtitle {
+         font-size: 18px;
+         margin: 35px 0px;
+      }
+   }
+
    @media (max-width: $md) {
       &__content {
+         flex: 0 1 470px;
          margin: 0px auto;
          text-align: center;
       }
@@ -84,28 +69,27 @@
          display: none;
       }
 
-      &__sliders {
-         justify-content: space-between;
-      }
-
       &__btn {
          height: 48px;
          width: 160px;
          margin: 35px auto 0px auto;
       }
    }
+
    @media (max-width: $sm) {
       &__title {
-    font-size: 36px;
+         font-size: 36px;
       }
-  }
-   
+   }
 }
 
 .sliders {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+
    &__item {
       border-radius: 6px;
-      padding: 25px 25px 0px 0px;
    }
 
    &__btn {
@@ -121,11 +105,6 @@
    }
 
    @media (min-width: $xl) {
-      &__item {
-         border-radius: 6px;
-         padding: 35px 30px 0px 0px;
-      }
-
       &__btn {
          height: 52px;
          width: 220px;
@@ -136,19 +115,25 @@
       }
    }
 
+   @media (max-width: $lg) {
+      gap: 20px;
+      &__btn {
+         height: 48px;
+         width: 175px;
+      }
+   }
+
    @media (max-width: $md) {
-      &__item {
-         padding: 25px 8px 0px 8px;
+      gap: 30px;
+      &__btn {
+         width: 220px;
+         height: 52px;
       }
    }
 
    @media (max-width: $sm) {
       &__item {
          margin: 0px auto;
-      }
-
-      &__btn {
-         width: 220px;
       }
    }
 }

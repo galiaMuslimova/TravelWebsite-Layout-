@@ -1,17 +1,6 @@
 .header {
-  margin: 0px auto 50px auto;
-  @media (min-width: $md) and (max-width: $lg) {
-    margin: 0px auto 30px auto;
-  }
-  @media (max-width: $sm) {
-    margin: 0px auto 20px auto;
-  }
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 130px;
+  padding: 0px 0px 40px 0px;
 
   &__logo {
     width: 41px;
@@ -20,20 +9,41 @@
 
   &__icon {
     display: none;
+    @media (max-width: $md) {
+      display: block;
+    }
   }
 
+  &__body {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $lg) {
+    padding: 0px auto 30px auto;
+  }
+
+  @media (max-width: $md) {
+    height: 90px;
+  }
+
+  @media (max-width: $sm) {
+    padding: 0px auto 20px auto;
+  }
+}
+
+.menu {
   &__list {
     display: flex;
     justify-content: flex-end;
+    gap: 34px;
     align-items: center;
-    height: 60px;
-    margin: 35px 0px;
+    list-style-type: none;
   }
 
   &__link {
-    list-style-type: none;
     cursor: pointer;
-    padding: 0px 34px 0px 0px;
     color: #b8becd;
     transition: color 0.3s;
 
@@ -42,27 +52,9 @@
       color: #202336;
       font-weight: 500;
     }
-  }
 
-  &__reg {
-    list-style-type: none;
-
-    &_login {
-      padding: 0px 18px 0px 0px;
-    }
-  }
-
-  @media (max-width: $md) {
-    .menu {
-      &__body {
-        display: none;
-      }
-    }
-  }
-
-  @media (min-width: $md) and (max-width: $lg) {
-    &__link {
-      padding: 0px 28px 0px 0px;
+    @media (max-width: $lg) {
+      gap: 28px;
     }
   }
 }
@@ -84,7 +76,7 @@
     }
   }
 
-  @media (min-width: $md) and (max-width: $lg) {
+  @media (max-width: $lg) {
     width: 120px;
   }
 }

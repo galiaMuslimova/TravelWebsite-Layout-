@@ -1,28 +1,31 @@
-.stories__item {
-  .item {
-    &__image {
-      height: 230px;
-      img {
-        object-position: 50% 0%;
+.stories {
+  padding: 0px 0px 40px 0px;
+  &__item {
+    .item {
+      &__image {
+        height: 230px;
+        img {
+          object-position: 50% 0%;
+        }
       }
-    }
 
-    &__title {
-      font-weight: 700;
-      font-size: 19px;
-      line-height: 30 / 19 * 100%;
-      padding: 13px 0px;
-    }
+      &__title {
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 30 / 19 * 100%;
+        padding: 13px 0px;
+      }
 
-    &__subtitle {
-      font-size: 15px;
-      line-height: 26 / 15 * 100%;
-      color: #7D7987;
-    }
+      &__subtitle {
+        font-size: 15px;
+        line-height: 26 / 15 * 100%;
+        color: #7d7987;
+      }
 
-    &__more {
-      margin: 23px 0px 0px 0px;
-      color: $orange;
+      &__more {
+        margin: 23px 0px 0px 0px;
+        color: $orange;
+      }
     }
   }
 }
