@@ -1,4 +1,5 @@
 .explore {
+   
    &__content {
       flex: 0 0 410px;
       color: #202336;
@@ -30,6 +31,7 @@
    }
 
    @media (min-width: $xl) {
+      margin: 0px 0px 286px 0px;
       &__content {
          flex: 0 0 470px;
       }

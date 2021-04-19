@@ -1,5 +1,4 @@
 .destin {
-   padding: 0px 0px 40px 0px;
    &__item {
       .item {
          &__text {
@@ -35,5 +34,13 @@
             }
          }
       }
+   }
+
+   @media (max-width: $md) {
+      padding: 0px 0px 40px 0px;
+   }
+
+   @media (min-width: $xl) {
+      margin: 0px 0px 231px 0px;
    }
 }

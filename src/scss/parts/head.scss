@@ -13,6 +13,10 @@
       }
    }
 
+   @media (max-width: $lg) {
+      margin: 0px 0px 40px 0px;
+   }
+
    @media (max-width: $sm) {
       margin: 0px 0px 25px 0px;
    }

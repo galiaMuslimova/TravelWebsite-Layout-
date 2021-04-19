@@ -4,7 +4,7 @@
 
 //Переменные
 $minWidth: 320px;
-$maxWidth: 1410px;
+$maxWidth: 1400px;
 $xl: 1400px;
 $lg: 1200px;
 $md: 900px;
@@ -15,7 +15,6 @@ $orange: #fb8f1d;
 $yellow: #ffbb0c;
 
 body {
-  margin: 0px auto;
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
@@ -24,27 +23,17 @@ body {
   @media (max-width: $md) {
     &.lock {
       overflow: hidden;
-    }    
+    }
   }
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  gap: 200px;
-
-  @media (max-width: $lg) {
-    gap: 120px;
-  }
-}
 //1390px
 //1220px
 //1130px
 //1120px
 
 .wrapper {
-  margin: 0px auto;
-  width: 95%;
+  margin: 0px auto 170px auto;
 
   &__1 {
     max-width: 1220px;
@@ -52,6 +41,22 @@ body {
   &__2 {
     max-width: 1120px;
     position: relative;
+  }
+
+  @media (min-width: $xl) {
+    margin: 0px auto 0px auto;
+  }
+
+  @media (max-width: $xl) {
+    width: 95%;
+  }
+
+  @media (max-width: $lg) {
+    margin: 0px auto 120px auto;
+  }
+
+  @media (max-width: $md) {
+    margin: 0px auto 90px auto;
   }
 }
 

@@ -9,6 +9,10 @@
   &__content {
     flex: 0 1 450px;
 
+     @media (max-width: $md) {
+       text-align: center;
+     }
+
     @media (max-width: $sm) {
       flex: 1 1 250px;
       margin: 10px 0px 0px 0px;
@@ -21,11 +25,14 @@
     justify-content: space-between;
     max-width: 190px;
     gap: 10px;
-    margin: 0px auto;
 
     .star {
       width: 25px;
       height: 25px;
+    }
+
+    @media (max-width: $md) {
+      margin: 0px auto;
     }
   }
 
@@ -66,6 +73,10 @@
       border-radius: 12px;
     }
   }
+
+  @media (min-width: $xl) {
+    margin: 0px 0px 285px 0px;
+  }
 }
 .slider {
   position: absolute;
@@ -83,11 +94,17 @@
   &__btn {
     padding: 20px 0px 0px 22px;
 
-    svg {
+    .svg {
       height: 40px;
-      width: 40px;
-
       opacity: 0.6;
+
+      &__lg {
+        display: block;
+      }
+
+      &__sm {
+        display: none;
+      }
 
       &:hover {
         circle {
@@ -99,6 +116,12 @@
       }
 
       @media (max-width: $sm) {
+        &__sm {
+          display: block;
+        }
+        &__lg {
+          display: none;
+        }
         transform: scale(3);
         &:hover {
           path {
