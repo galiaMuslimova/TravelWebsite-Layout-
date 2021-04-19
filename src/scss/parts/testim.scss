@@ -96,7 +96,7 @@
 
     .svg {
       height: 40px;
-      opacity: 0.6;
+      opacity: 0.8;
 
       &__lg {
         display: block;
@@ -122,7 +122,8 @@
         &__lg {
           display: none;
         }
-        transform: scale(3);
+        height: 30px;
+        transform: scale(2);
         &:hover {
           path {
             stroke: #80908e;
