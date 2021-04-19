@@ -1,16 +1,25 @@
 .footer {
-  font-size: 18px;
-  line-height: 28/18 * 100%;
-  font-weight: 300;
-  font-family: "Mulish";
-  color: #848484;
-  margin: 200px 0px 0px 0px;
-  background: #f9f9fb;
   width: 100%;
+  background-color: #f9f9fb;
+
+  &__container {
+    font-size: 18px;
+    line-height: 28/18 * 100%;
+    font-weight: 300;
+    font-family: "Mulish";
+    color: #848484;
+    margin: 200px 0px 0px 0px;
+    width: 100%;
+  }
 
   &__row {
-    height: 240px;
     padding: 80px 0px;
+
+    @media (max-width: $sm) {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 0px;
+    }
   }
 
   &__logo {
@@ -30,6 +39,12 @@
   &__text {
     max-width: 340px;
     margin: 26px 0px 55px 0px;
+    @media (max-width: $md) {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+  @media (max-width: $md) {
+    flex: 0 1 auto;
   }
 }
 
@@ -41,7 +56,11 @@
 
   @media (max-width: $md) {
     flex-direction: column;
-    max-width: 300px;
+    max-width: 270px;
+  }
+
+  @media (max-width: $md) {
+    flex: 0 1 auto;
   }
 }
 
@@ -73,7 +92,6 @@
   }
 
   &__slider {
-    
   }
 }
 .social {

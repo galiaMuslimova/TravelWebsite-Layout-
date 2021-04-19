@@ -1,51 +1,53 @@
-<div class="wrapper wrapper__1">
-  <div class="footer">
-    <div class="footer__row inner">
-      <div class="col-1">
-        <div class="footer__logo">
-          <img class="img" src="img/logo.png" />
+<div class="footer">
+  <div class="wrapper wrapper__1">
+    <div class="footer__container">
+      <div class="footer__row inner">
+        <div class="col-1">
+          <div class="footer__logo">
+            <img class="img" src="img/logo.png" />
+          </div>
+          <div class="col-1__text text">
+            Plan and book your perfect trip with expert advice, travel tips destination information from us
+          </div>
+          <div class="col-1__text text">©2020 Thousand Sunny. All rights reserved</div>
         </div>
-        <div class="col-1__text text">
-          Plan and book your perfect trip with expert advice, travel tips destination information from us
-        </div>
-        <div class="col-1__text text">©2020 Thousand Sunny. All rights reserved</div>
-      </div>
-      <div class="col-2">
-        @@include('footer/footer-select.html', {
+        <div class="col-2">
+          @@include('footer/footer-select.html', {
           'title': 'Destinations',
           'arr': ['Africa', 'Antarctica', 'Europe', 'Asia', 'America']
-        })
-        @@include('footer/footer-list.html', {
-        'title': 'Destinations',
-        'arr': ['Africa', 'Antarctica', 'Europe', 'Asia', 'America']
-        })
+          })
+          @@include('footer/footer-list.html', {
+          'title': 'Destinations',
+          'arr': ['Africa', 'Antarctica', 'Europe', 'Asia', 'America']
+          })
 
-        @@include('footer/footer-select.html', {
-        'title': 'Shop',
-        'arr': ['Destination Guides', 'Pictorial & Gifts', 'Special Offers', 'Delivery Times', 'FAQs']
-        })
-        @@include('footer/footer-list.html', {
-        'title': 'Shop',
-        'arr': ['Destination Guides', 'Pictorial & Gifts', 'Special Offers', 'Delivery Times', 'FAQs']
-        })
+          @@include('footer/footer-select.html', {
+          'title': 'Shop',
+          'arr': ['Destination Guides', 'Pictorial & Gifts', 'Special Offers', 'Delivery Times', 'FAQs']
+          })
+          @@include('footer/footer-list.html', {
+          'title': 'Shop',
+          'arr': ['Destination Guides', 'Pictorial & Gifts', 'Special Offers', 'Delivery Times', 'FAQs']
+          })
 
-        @@include('footer/footer-select.html', {
-        'title': 'Interests',
-        'arr': ['Adventure Travel', 'Art And Cultur', 'Wildlife And Nature', 'Family Holidays', 'Food And Drink']
-        })
-        @@include('footer/footer-list.html', {
-        'title': 'Interests',
-        'arr': ['Adventure Travel', 'Art And Cultur', 'Wildlife And Nature', 'Family Holidays', 'Food And Drink']
-        })     
-        
+          @@include('footer/footer-select.html', {
+          'title': 'Interests',
+          'arr': ['Adventure Travel', 'Art And Cultur', 'Wildlife And Nature', 'Family Holidays', 'Food And Drink']
+          })
+          @@include('footer/footer-list.html', {
+          'title': 'Interests',
+          'arr': ['Adventure Travel', 'Art And Cultur', 'Wildlife And Nature', 'Family Holidays', 'Food And Drink']
+          })
+
+        </div>
       </div>
-    </div>
-    <div class="footer__social social">
-      <div class="social__icon tw"></div>
-      <div class="social__icon fb"></div>
-      <div class="social__icon ig"></div>
-      <div class="social__icon li"></div>
-      <div class="social__icon yt"></div>
+      <div class="footer__social social">
+        <div class="social__icon tw"></div>
+        <div class="social__icon fb"></div>
+        <div class="social__icon ig"></div>
+        <div class="social__icon li"></div>
+        <div class="social__icon yt"></div>
+      </div>
     </div>
   </div>
 </div>

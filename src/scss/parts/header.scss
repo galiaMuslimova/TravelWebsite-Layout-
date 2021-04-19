@@ -1,6 +1,7 @@
 .header {
-  height: 130px;
-  padding: 0px 0px 40px 0px;
+  &__container {
+    padding: 40px 0px;
+  }
 
   &__logo {
     width: 41px;
@@ -9,37 +10,75 @@
 
   &__icon {
     display: none;
+
     @media (max-width: $md) {
-      display: block;
+      display: flex;
+      position: relative;
+      height: 20px;
+      width: 30px;
+      justify-content: space-between;
+      flex-direction: column;
+      cursor: pointer;
+
+      span {
+        background-color: #202336;
+        width: 100%;
+        height: 2px;
+        left: 0;
+      }
+
+      &.active {
+        display: block;
+        span {
+          position: absolute;
+          transform: scale(0);
+          top: 50%;
+          &:first-child {
+            transform: rotate(-45deg);
+          }
+
+          &:last-child {
+            transform: rotate(45deg);
+          }
+        }
+      }
     }
-  }
-
-  &__body {
-    @media (max-width: $md) {
-      display: none;
-    }
-  }
-
-  @media (max-width: $lg) {
-    padding: 0px auto 30px auto;
-  }
-
-  @media (max-width: $md) {
-    height: 90px;
-  }
-
-  @media (max-width: $sm) {
-    padding: 0px auto 20px auto;
   }
 }
 
 .menu {
+  @media (max-width: $md) {
+    display: none;
+
+    &.active {
+      display: flex;
+      position: fixed;
+      top: 120px;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      overflow: auto;
+    }
+  }
+
   &__list {
+    height: 50px;
     display: flex;
     justify-content: flex-end;
     gap: 34px;
     align-items: center;
     list-style-type: none;
+
+    @media (max-width: $md) {
+      height: 600px;
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      font-size: 30px;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
+    }
   }
 
   &__link {
@@ -78,5 +117,10 @@
 
   @media (max-width: $lg) {
     width: 120px;
+  }
+
+  @media (max-width: $md) {
+    height: 44px;
+    width: 200px;
   }
 }

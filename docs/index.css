@@ -2,12 +2,14 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Mulish:300,regular,700);
 body {
-  max-width: 1410px;
   margin: 0px auto;
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   color: #000000; }
+  @media (max-width: 900px) {
+    body.lock {
+      overflow: hidden; } }
 
 .page {
   display: flex;
@@ -223,17 +225,22 @@ body {
       margin: 0px auto; } }
 
 .footer {
-  font-size: 18px;
-  line-height: 155.55556%;
-  font-weight: 300;
-  font-family: "Mulish";
-  color: #848484;
-  margin: 200px 0px 0px 0px;
-  background: #f9f9fb;
-  width: 100%; }
+  width: 100%;
+  background-color: #f9f9fb; }
+  .footer__container {
+    font-size: 18px;
+    line-height: 155.55556%;
+    font-weight: 300;
+    font-family: "Mulish";
+    color: #848484;
+    margin: 200px 0px 0px 0px;
+    width: 100%; }
   .footer__row {
-    height: 240px;
     padding: 80px 0px; }
+    @media (max-width: 600px) {
+      .footer__row {
+        display: flex;
+        flex-direction: column; } }
   .footer__logo {
     height: 44px;
     width: 44px; }
@@ -247,6 +254,12 @@ body {
   .col-1__text {
     max-width: 340px;
     margin: 26px 0px 55px 0px; }
+    @media (max-width: 900px) {
+      .col-1__text {
+        margin: 0px 0px 0px 0px; } }
+  @media (max-width: 900px) {
+    .col-1 {
+      flex: 0 1 auto; } }
 
 .col-2 {
   flex: 1 2 720px;
@@ -256,7 +269,10 @@ body {
   @media (max-width: 900px) {
     .col-2 {
       flex-direction: column;
-      max-width: 300px; } }
+      max-width: 270px; } }
+  @media (max-width: 900px) {
+    .col-2 {
+      flex: 0 1 auto; } }
 
 .col {
   flex: 1 1 150px;
@@ -294,36 +310,69 @@ body {
     .head {
       margin: 0px 0px 25px 0px; } }
 
-.header {
-  height: 130px;
-  padding: 0px 0px 40px 0px; }
-  .header__logo {
-    width: 41px;
-    height: 41px; }
-  .header__icon {
+.header__container {
+  padding: 40px 0px; }
+
+.header__logo {
+  width: 41px;
+  height: 41px; }
+
+.header__icon {
+  display: none; }
+  @media (max-width: 900px) {
+    .header__icon {
+      display: flex;
+      position: relative;
+      height: 20px;
+      width: 30px;
+      justify-content: space-between;
+      flex-direction: column;
+      cursor: pointer; }
+      .header__icon span {
+        background-color: #202336;
+        width: 100%;
+        height: 2px;
+        left: 0; }
+      .header__icon.active {
+        display: block; }
+        .header__icon.active span {
+          position: absolute;
+          transform: scale(0);
+          top: 50%; }
+          .header__icon.active span:first-child {
+            transform: rotate(-45deg); }
+          .header__icon.active span:last-child {
+            transform: rotate(45deg); } }
+
+@media (max-width: 900px) {
+  .menu {
     display: none; }
-    @media (max-width: 900px) {
-      .header__icon {
-        display: block; } }
-  @media (max-width: 900px) {
-    .header__body {
-      display: none; } }
-  @media (max-width: 1200px) {
-    .header {
-      padding: 0px auto 30px auto; } }
-  @media (max-width: 900px) {
-    .header {
-      height: 90px; } }
-  @media (max-width: 600px) {
-    .header {
-      padding: 0px auto 20px auto; } }
+    .menu.active {
+      display: flex;
+      position: fixed;
+      top: 120px;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      overflow: auto; } }
 
 .menu__list {
+  height: 50px;
   display: flex;
   justify-content: flex-end;
   gap: 34px;
   align-items: center;
   list-style-type: none; }
+  @media (max-width: 900px) {
+    .menu__list {
+      height: 600px;
+      width: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      font-size: 30px;
+      padding: 0px 0px 0px 0px;
+      margin: 0px 0px 0px 0px; } }
 
 .menu__link {
   cursor: pointer;
@@ -351,6 +400,10 @@ body {
   @media (max-width: 1200px) {
     .btn-reg {
       width: 120px; } }
+  @media (max-width: 900px) {
+    .btn-reg {
+      height: 44px;
+      width: 200px; } }
 
 .items-box {
   display: flex;

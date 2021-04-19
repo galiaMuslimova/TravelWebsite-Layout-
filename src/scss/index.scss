@@ -15,12 +15,17 @@ $orange: #fb8f1d;
 $yellow: #ffbb0c;
 
 body {
-  max-width: $maxWidth;
   margin: 0px auto;
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   color: #000000;
+
+  @media (max-width: $md) {
+    &.lock {
+      overflow: hidden;
+    }    
+  }
 }
 
 .page {
