@@ -32,6 +32,9 @@
   &__logo {
     height: 44px;
     width: 44px;
+    @media (max-width: $sm) {
+      margin: 0px auto;
+    }
   }
 
   &__title {
@@ -42,13 +45,20 @@
 }
 
 .col-1 {
-  flex: 1 2 340px;
+  flex: 1 1 340px;
+  padding: 0px 30px 0px 0px;
   &__text {
     max-width: 340px;
     margin: 26px 0px 55px 0px;
     @media (max-width: $md) {
       margin: 15px 0px;
     }
+    @media (max-width: $sm) {
+      text-align: center;
+    }
+  }
+  @media (max-width: $md) {
+    padding: 0px;
   }
   @media (max-width: $sm) {
     flex: 0 1 auto;
@@ -56,14 +66,13 @@
 }
 
 .col-2 {
-  flex: 1 2 720px;
+  flex: 1 1 720px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
 
   @media (max-width: $md) {
     flex-direction: column;
-    max-width: 270px;
+    flex: 1 1 270px;
   }
 
   @media (max-width: $sm) {
@@ -94,6 +103,7 @@
 }
 .select {
   display: block;
+  margin: 10px auto;
   @media (min-width: $md) {
     display: none;
   }
@@ -105,12 +115,14 @@
 }
 .social {
   height: 85px;
-  border-top: 1px solid #C4C4C4; 
+  border-top: 1px solid #c4c4c4;
 
   &__container {
     display: flex;
-    gap: 35px;
-    width: 250px;
     margin: 0px auto;
+  }
+
+  &__icon {
+    margin: 0px 17px;
   }
 }

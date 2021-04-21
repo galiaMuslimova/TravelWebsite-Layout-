@@ -1,5 +1,4 @@
 .explore {
-   
    &__content {
       flex: 0 0 410px;
       color: #202336;
@@ -88,10 +87,11 @@
 .sliders {
    display: flex;
    flex-wrap: wrap;
-   gap: 30px;
+   margin: -15px;
 
    &__item {
       border-radius: 6px;
+      margin: 15px;
    }
 
    &__btn {
@@ -118,7 +118,11 @@
    }
 
    @media (max-width: $lg) {
-      gap: 20px;
+      margin: -10px;
+
+      &__item {
+         margin: 10px;
+      }
       &__btn {
          height: 48px;
          width: 175px;
@@ -126,7 +130,11 @@
    }
 
    @media (max-width: $md) {
-      gap: 30px;
+      margin: -15px;
+
+      &__item {
+         margin: 15px ;
+      }
       &__btn {
          width: 220px;
          height: 52px;
@@ -134,8 +142,10 @@
    }
 
    @media (max-width: $sm) {
+      margin: -15px auto;
+
       &__item {
-         margin: 0px auto;
+         margin: 15px auto;
       }
    }
 }

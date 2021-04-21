@@ -8,6 +8,7 @@
 
   &__content {
     flex: 0 1 450px;
+    padding: 0px 20px 0px 0px;
 
      @media (max-width: $md) {
        text-align: center;
@@ -24,9 +25,10 @@
     display: flex;
     justify-content: space-between;
     max-width: 190px;
-    gap: 10px;
+    margin: 0px -5px;
 
     .star {
+      margin: 0px -5px;
       width: 25px;
       height: 25px;
     }

@@ -3,7 +3,7 @@
       display: block;
       flex: 0 1 610px;
       max-width: 45%;
-      &_about {         
+      &_about {
          @media (min-width: $xl) {
             position: relative;
             top: 0;
@@ -16,7 +16,10 @@
       flex: 0 1 450px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+   }
+
+   &__text {
+      margin: 20px 0px;
    }
 
    @media (max-width: $md) {
